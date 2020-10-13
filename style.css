@@ -34,10 +34,12 @@ body {
     color: #0d1a26;
     text-decoration: none;
 }
-.active {
-    font-weight: bold;
+.activeq {
+    
 }
-
+nav a.active {
+   font-weight: bold;
+}
 .home_text {
     position: absolute;
     margin: 15% 0 0 15%;
@@ -350,17 +352,53 @@ hr{
     text-decoration:none;
     background-color: #ecf2f9;
     color: #0d1a26;
-    padding: 10px 15px;
+    padding: 10px 10px;
     font-size: 13px;
     cursor: pointer;
     border: groove;
     border-color: #0d1a26;
     margin-left:5%;
+    margin-top:3%;
 }
 .project_button a:hover{
     background-color:#0d1a26;
     color:#ecf2f9;
 }
+
+#moreText {
+    display: none;
+}
+
+.more_text {
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: center;
+    margin-left: 10%;
+}
+.more_text:before,
+.more_text:after {
+        content: '';
+        display: inline-block;
+        position: relative;
+        top: -1px;
+        width: 35%;
+        height: 1px;
+        vertical-align: middle;
+        background: black;
+    }
+
+.more_text:before {
+    left: -5px;
+   
+}
+
+.more_text:after {
+    left: 5px;
+   
+}
+
+
 
 .contact_form {
     margin: 3% 0 3% 30%;
@@ -471,4 +509,7 @@ hr{
 .last_text {
     text-align: center;
     color: #ecf2f9;
+    padding: 1% 0;
 }
+
+
