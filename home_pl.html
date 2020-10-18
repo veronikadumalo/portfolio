@@ -2,11 +2,12 @@
 <html>
 <head>
     <title>Veronika Dumalo</title>
+    <link rel="shortcut icon" href="image/logoVD.png" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <script src="more_project.js"></script>
-    <script src="menu.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="portfolio.js"></script>
 </head>
 <body>
     
@@ -27,10 +28,10 @@
         <div class='menu' id="menu">
             <nav>
                 <ul>
-                    <li><a href="#animation-area" class='iteam_menu active' data-scroll="home">GŁÓWNA</a></li>
-                    <li><a href="#about" class='iteam_menu' data-scroll="about">O MNIE</a></li>
-                    <li><a href="#projects" class='iteam_menu' data-scroll="projects">PROJEKTY</a></li>
-                    <li><a href="#contact" class='iteam_menu' data-scroll="contact">KONTAKT</a></li>
+                    <li><a href="#animation-area" class='iteam_menu active' >GŁÓWNA</a></li>
+                    <li><a href="#about" class='iteam_menu' >O MNIE</a></li>
+                    <li><a href="#projects" class='iteam_menu' >PROJEKTY</a></li>
+                    <li><a href="#contact" class='iteam_menu' >KONTAKT</a></li>
                     <li><a href="home.html" class='iteam_menu'>EN</a></li>
                 </ul>
             </nav>
@@ -185,33 +186,43 @@
     <section id="contact" class="contact" data-anchor="contact">
         <h1>KONTAKT</h1>
         <hr />
-        <div class="logo_contact">
-           
-                <ul class="logo_list">
-                    <li><a href="" class="fab fa-linkedin"></a></li>
-                    <li><a href="" class="fab fa-github"></a></li>
-                    <li class="mail_block"><a href=""><i class="fa fa-envelope"></i><span class="mail_text">dumaloveronika@gmail.com</span></a></li>
-                    <li></li>
-                </ul>
-           
-                
+        <div class="contactForm">
+            <div class="row">
+                <div class="column">
+                    <div class="logo_contact">
+                        <ul class="logo_list">
+                            <li><a href="" class="fab fa-linkedin"></a></li>
+                            <li><a href="" class="fab fa-github"></a></li>
+                            <li class="mail_block"><a href=""><i class="fa fa-envelope"></i><span class="mail_text">dumaloveronika@gmail.com</span></a></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="column">
+                    <form class="contact_form">
+                        <label>Imię:</label><br />
+                        <input type="text" class="name"><br />
+                        <label>Adres email:</label><br />
+                        <input type="email" class="email" /><br />
+                        <label>Treść wiadomości:</label><br />
+                        <textarea id="subject" name="subject" class="messege"></textarea><br />
+                        <button type="submit" class="send_button">WYSŁAĆ</button>
+                    </form>
+                </div>
+            </div>
         </div>
-        <hr />
-        <form class="contact_form">
-            <label>Imię:</label><br />
-            <input type="text"   class="name"><br />
-            <label>Adres email:</label><br />
-            <input type="email"  class="email" /><br />
-            <label>Treść wiadomości:</label><br />
-            <textarea id="subject" name="subject"  class="messege"></textarea><br />
-            <button type="submit"class="send_button">WYSŁAĆ</button>
-        </form>
-        <hr />
         
-        <p class="last_text">© Veronika Dumalo 2020</p>
+        
+        
+        
+       <hr />
+
+        <p class="last_text">©2020 Veronika Dumalo </p>
+        <p id="demo"></p>
         
     </section>
-    
- 
+    <script>
+        
+    </script>
 </body>
 </html>
