@@ -397,55 +397,48 @@ hr{
 
 
 .contact_form {
-    margin: 3% 0 3% 0%;
+    margin: 7% 0 7% 0%;
 }
 .contact_form input{
-    width:60%;
+    width:75%;
     height:40px;
     background-color:#0d1a26;
     border-color:#ecf2f9;
+    border-width:medium;
     margin:1% 0;
-}
-.contact_form input:hover{
-    
-}
-.contact_form input:focus{
-    
+    color:#ecf2f9;
 }
 .contact_form textarea{
-    width:60%;
+    width:75%;
     margin: 1% 0;
     height:100px;
-    background-color:none;
+    background-color:#0d1a26;
+    border-color:#ecf2f9;
+    border-width:medium;
+    color:#ecf2f9;
  }
 .contact_form label{
     color:#ecf2f9;
 }
-.contact_form textarea:hover{
-    
-}
-.contact_form textarea:focus{
-   
-}
 .send_button {
-    width: 10%;
+    margin-left:25%;
+    padding: 8px 30px;
     background-color: #0d1a26;
-    color: #d9d9d9;
-    padding: 10px 15px;
-    font-size: 13px;
-    margin-left: 25%;
-    border: groove;
+    color: #ecf2f9;
+    border-color: #ecf2f9;
+    border-width: medium;
+    cursor: pointer; 
+
 }
 .send_button:hover{
-    background-color:#d9d9d9;
-    color:#0d1a26;
-    cursor:pointer;
-    border-color:#0d1a26;
+    background-color: #ecf2f9;
+    color: #0d1a26;
+    border-color: #0d1a26;
+    border-width: medium;
 }
 .logo_list a {
     font-size: 50px;
     text-decoration: none;
-    
 }
 .mail_text {
     font-size: 15px;
@@ -454,11 +447,13 @@ hr{
     display: none;
 }
 .logo_list {
-    
+    margin-left:23%;
+    margin-top:15%;
 }
 .logo_list li {
     display: inline-block;
-    margin: 5%;
+    margin: 6%;
+    
 }
 
 .fa {
@@ -492,7 +487,7 @@ hr{
 
 .contact {
     width: 100%;
-    height: auto;
+    height: 100vh;
     background-color: #0d1a26;
 }
 
@@ -506,8 +501,9 @@ hr{
 .last_text {
     text-align: center;
     color: #ecf2f9;
+    margin-top:2.5%;
     padding: 1% 0;
-    font-size:12px;
+    font-size:13px;
 }
 
 
