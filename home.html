@@ -2,14 +2,17 @@
 <html>
 <head>
     <title>Veronika Dumalo</title>
+    <link rel="shortcut icon" href="image/logoVD.png" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="portfolio.js"></script>
 </head>
 <body>
     
 
-    <section class="animation-area">
+    <section class="animation-area" id="animation-area">
         <ul class="boll_animation">
             <li></li>
             <li></li>
@@ -23,12 +26,16 @@
             <li></li>
         </ul>
         <div class='menu'>
-            <ul>
-                <li><a href="#animation-area" class='iteam_menu active'>HOME</a></li>
-                <li><a href="#about" class='iteam_menu'>ABOUT ME</a></li>
-                <li><a href="#projects" class='iteam_menu'>PROJECTS</a></li>
-                <li><a href="#contact" class='iteam_menu'>CONTACT</a></li>
-            </ul>
+            <nav>
+                <ul>
+                    <li><a href="#animation-area" class='iteam_menu active'>HOME</a></li>
+                    <li><a href="#about" class='iteam_menu'>ABOUT ME</a></li>
+                    <li><a href="#projects" class='iteam_menu'>PROJECTS</a></li>
+                    <li><a href="#contact" class='iteam_menu'>CONTACT</a></li>
+                    <li><a href="home_pl.html" class="iteam_menu">PL</a></li>
+                </ul>
+            </nav>
+            
         </div>
         <div class='home_text'>
             <p>Hello, I am</p>
@@ -140,7 +147,7 @@
             </div>
             <div class="project_button">
                 <a href="">OPEN</a>
-                <a href="">CHECK CODE</a>
+                <a href="https://github.com/veronikadumalo/veronikadumalo_pcmz.git">CHECK CODE</a>
             </div>
         </div>
         <hr />
@@ -155,8 +162,8 @@
                 </div>
             </div>
             <div class="project_button">
-                <a href="">OPEN</a>
-                <a href="">CHECK CODE</a>
+                <a href="http://spcmz.czest.pl/glowna.html">OPEN</a>
+                <a href="https://github.com/veronikadumalo/veronikadumalo_phoneshop.git">CHECK CODE</a>
             </div>
         </div>
         <hr />
@@ -164,25 +171,33 @@
     <section id="contact" class="contact">
         <h1>CONTACT</h1>
         <hr />
-        <div class="logo_contact">
-            <ul class="logo_list">
-                <li><a href="" class="fab fa-linkedin" ></a></li>
-                <li><a href="" class="fab fa-github" ></a></li>
-                <li class="mail_block"><a href="" ><i class="fa fa-envelope"></i><span class="mail_text">dumaloveronika@gmail.com</span></a></li>
-                <li></li>
-            </ul>     
+        <div class="contactForm">
+            <div class="row">
+                <div class="column">
+                    <div class="logo_contact">
+                        <ul class="logo_list">
+                            <li><a href="" class="fab fa-linkedin"></a></li>
+                            <li><a href="" class="fab fa-github"></a></li>
+                            <li class="mail_block"><a href=""><i class="fa fa-envelope"></i><span class="mail_text">dumaloveronika@gmail.com</span></a></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="column">
+                    <form class="contact_form">
+                        <label>Name:</label><br />
+                        <input type="text" class="name"><br />
+                        <label>Email:</label><br />
+                        <input type="email" class="email" /><br />
+                        <label>Message:</label><br />
+                        <textarea id="subject" name="subject" class="messege"></textarea><br />
+                        <button type="submit" class="send_button">SEND</button>
+                    </form>
+                </div>
+            </div>
         </div>
         <hr />
-        <form class="contact_form">
-            <label>Your Name:</label><br />
-            <input type="text" placeholder="Name"  class="name"><br />
-            <label>Your Email:</label><br />
-            <input type="email" placeholder="Email" class="email" /><br />
-            <label>Message:</label><br />
-            <textarea id="subject" name="subject" placeholder="Message" class="messege"></textarea><br />
-            <button type="submit"class="send_button">SEND</button>
-        </form>
-        
+
         <p class="last_text">© Veronika Dumalo 2020</p>
     </section>
     
