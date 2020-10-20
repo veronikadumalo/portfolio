@@ -256,26 +256,6 @@ hr{
     
 }
 
-.vl {
-    position: absolute;
-    border-left: 1px solid #ecf2f9;
-    height: 300px;
-    margin: 5.5% 0 0 27%;
-}
-
-.circle_education {
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: #ecf2f9;
-    margin: 5.5% 0 0 26.7%;
-}
-
-.two_circle {
-    margin-top: 17%;
-}
-
 .education_table {
     color: #ecf2f9;
     width:90%;
