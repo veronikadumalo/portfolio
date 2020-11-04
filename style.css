@@ -15,7 +15,7 @@ body {
     width: 100%;
     position: fixed; /* Safari */
     height: 80px;
-    background-color: rgba(209, 224, 224, 0.9);
+    background-color: rgba(209, 224, 224, 0.7);
 }
 .menu ul{
     float:right;
