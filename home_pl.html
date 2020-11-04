@@ -8,10 +8,11 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
     <script src="portfolio.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 </head>
 <body>
-    
-    
+
+
     <section class="animation-area" id="animation-area" data-anchor="home">
         <ul class="boll_animation">
             <li></li>
@@ -28,14 +29,14 @@
         <div class='menu' id="menu">
             <nav>
                 <ul>
-                    <li><a href="#animation-area" class='iteam_menu active' >GŁÓWNA</a></li>
-                    <li><a href="#about" class='iteam_menu' >O MNIE</a></li>
-                    <li><a href="#projects" class='iteam_menu' >PROJEKTY</a></li>
-                    <li><a href="#contact" class='iteam_menu' >KONTAKT</a></li>
+                    <li><a href="#animation-area" class='iteam_menu active'>GŁÓWNA</a></li>
+                    <li><a href="#about" class='iteam_menu'>O MNIE</a></li>
+                    <li><a href="#projects" class='iteam_menu'>PROJEKTY</a></li>
+                    <li><a href="#contact" class='iteam_menu'>KONTAKT</a></li>
                     <li><a href="home.html" class='iteam_menu'>EN</a></li>
                 </ul>
             </nav>
-            
+
         </div>
         <div class='home_text'>
             <p>Hello, I am</p>
@@ -58,7 +59,7 @@
                     <p>
                         Jestem początkującym web developerem.
                         Jestem magistrem Informatyki. Na studiach otrzymałam  obszerną wiedzę i dużo informacji w zakresie technologii internetowych i grafiki 3D. Potrafie robić różne strony internetowe oraz aplikacje, wykorzystując
-                        HTML, CSS, JS, PHP oraz bazy danych. Obecnie poznaje możliwości Reacta. Jestem otwarta na naukę innych technologii i gotowa do nowych wyzwań. 
+                        HTML, CSS, JS, PHP oraz bazy danych. Obecnie poznaje możliwości Reacta. Jestem otwarta na naukę innych technologii i gotowa do nowych wyzwań.
                     </p>
                 </div>
             </div>
@@ -82,7 +83,7 @@
                         <br />
                         SPECJALNOŚĆ: Technologie internetowe i techniki multymedialne
                         <br />
-                        UZYSKANY TYTUŁ: Inżynier 
+                        UZYSKANY TYTUŁ: Inżynier
                         <br />
                         <br />
                         <br />
@@ -129,7 +130,7 @@
     <section id="projects" class="projects" data-anchor="projects">
         <h1>PROJEKTY</h1>
         <hr />
-        <div class="project_box">
+        <div class="project_box ">
             <div class="row">
                 <div class="column">
                     <h1>Strona internetowa dla Polski Centrum Miłośników Zwierząt</h1>
@@ -148,12 +149,12 @@
             </div>
         </div>
         <hr />
-        <div class="project_box">
+        <div class="project_box ">
             <div class="row">
                 <div class="column">
                     <h1>Smartphone World</h1>
                     <p>
-                        Projekt jest sklepem internetowym smartphonów. Do wykonania tego projektu wykorzystano HTML, CSS, PHP i bazę danych SQL 
+                        Projekt jest sklepem internetowym smartphonów. Do wykonania tego projektu wykorzystano HTML, CSS, PHP i bazę danych SQL
 
                         <span id="moreDots">...</span>
                         <span id="moreText">
@@ -161,7 +162,7 @@
                             <br />
                             <br /> - Strona zawiera możliwość rejestracji oraz logowania dla użytkowników.
                             <br /> - Dane o asortymencie sklepu wypisują się z bazy danych.
-                            <br /> - Dane użytkowników zapisują się do bazy danych. 
+                            <br /> - Dane użytkowników zapisują się do bazy danych.
                         </span>
                     </p>
                     <p>  </p>
@@ -178,7 +179,7 @@
             </div>
         </div>
         <hr />
-        <div class="project_box">
+        <div class="project_box ">
             <div class="row">
                 <div class="column">
                     <h1>Portfolio</h1>
@@ -223,17 +224,22 @@
                 </div>
             </div>
         </div>
-        
-        
-        
-        
-       <hr />
+
+
+
+
+        <hr />
 
         <p class="last_text">©2020 Veronika Dumalo </p>
         <p id="demo"></p>
-        
+
     </section>
     <script>
+        window.scroll = new ScrollReveal();
+        scroll.reveal('.project_box', {
+            opacity: 0,
+            interval:500
+        });
         
     </script>
 </body>
