@@ -15,7 +15,7 @@ function MoreProject() {
         moreText.style.display = "inline";
     }
 }
-
+//change active element in menu
 jQuery(document).ready(function ($) {
     var sections = $('section')
         , nav = $('nav')
@@ -34,6 +34,10 @@ jQuery(document).ready(function ($) {
         });
     });
 });
+//send button
+function Send() {
+    alert("Your messege send");
+}
 
 
 

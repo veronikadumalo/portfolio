@@ -264,7 +264,7 @@ hr{
 }
 .technologie_list{
     
-    margin-left:12%;
+    margin-left:17%;
     margin-top:3%;
 }
 .technology {
@@ -410,12 +410,7 @@ hr{
     cursor: pointer; 
 
 }
-.send_button:hover{
-    background-color: #ecf2f9;
-    color: #0d1a26;
-    border-color: #0d1a26;
-    border-width: medium;
-}
+
 .logo_list a {
     font-size: 50px;
     text-decoration: none;
