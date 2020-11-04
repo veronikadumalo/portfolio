@@ -341,7 +341,10 @@ hr{
     color:#ecf2f9;
 }
 
-#moreText {
+#moreTextOne  {
+    display: none;
+}
+#moreTextTwo {
     display: none;
 }
 

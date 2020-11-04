@@ -1,18 +1,34 @@
 ﻿//fuction open or cloth more information about projects
-function MoreProject() {
-    var moreDots = document.getElementById("moreDots");
-    var moreText = document.getElementById("moreText");
-    var moreButton = document.getElementById("moreButton");
+function MoreProjectOne() {
+    var moreDotsOne = document.getElementById("moreDotsOne");
+    var moreTextOne = document.getElementById("moreTextOne");
+    var moreButtonOne = document.getElementById("moreButtonOne");
    
 
-    if (moreDots.style.display === "none") {
-        moreDots.style.display = "inline";
-        moreButton.innerHTML = "WIĘCEJ";
-        moreText.style.display = "none";
+    if (moreDotsOne.style.display === "none") {
+        moreDotsOne.style.display = "inline";
+        moreButtonOne.innerHTML = "WIĘCEJ";
+        moreTextOne.style.display = "none";
     } else {
-        moreDots.style.display = "none";
-        moreButton.innerHTML = "MNIEJ";
-        moreText.style.display = "inline";
+        moreDotsOne.style.display = "none";
+        moreButtonOne.innerHTML = "MNIEJ";
+        moreTextOne.style.display = "inline";
+    }
+}
+function MoreProjectTwo() {
+    var moreDotsTwo = document.getElementById("moreDotsTwo");
+    var moreTextTwo = document.getElementById("moreTextTwo");
+    var moreButtonTwo = document.getElementById("moreButtonTwo");
+
+
+    if (moreDotsTwo.style.display === "none") {
+        moreDotsTwo.style.display = "inline";
+        moreButtonTwo.innerHTML = "WIĘCEJ";
+        moreTextTwo.style.display = "none";
+    } else {
+        moreDotsTwo.style.display = "none";
+        moreButtonTwo.innerHTML = "MNIEJ";
+        moreTextTwo.style.display = "inline";
     }
 }
 //change active element in menu
@@ -35,9 +51,6 @@ jQuery(document).ready(function ($) {
     });
 });
 //send button
-function Send() {
-    alert("Your messege send");
-}
 
 
 
