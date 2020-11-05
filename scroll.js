@@ -5,6 +5,6 @@ scroll.reveal('.project_box', {
 });
 scroll.reveal('.summary_box', {
     delay: 250,
-    origin: "left",
-    distance: "50px"
+    
+    
 });

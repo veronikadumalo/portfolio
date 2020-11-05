@@ -31,6 +31,38 @@ function MoreProjectTwo() {
         moreTextTwo.style.display = "inline";
     }
 }
+function MoreProjectOneEN() {
+    var moreDotsOneEN = document.getElementById("moreDotsOne");
+    var moreTextOne = document.getElementById("moreTextOne");
+    var moreButtonOne = document.getElementById("moreButtonOne");
+
+
+    if (moreDotsOne.style.display === "none") {
+        moreDotsOne.style.display = "inline";
+        moreButtonOne.innerHTML = "WIĘCEJ";
+        moreTextOne.style.display = "none";
+    } else {
+        moreDotsOne.style.display = "none";
+        moreButtonOne.innerHTML = "MNIEJ";
+        moreTextOne.style.display = "inline";
+    }
+}
+function MoreProjectTwoEN() {
+    var moreDotsTwo = document.getElementById("moreDotsTwo");
+    var moreTextTwo = document.getElementById("moreTextTwo");
+    var moreButtonTwo = document.getElementById("moreButtonTwo");
+
+
+    if (moreDotsTwo.style.display === "none") {
+        moreDotsTwo.style.display = "inline";
+        moreButtonTwo.innerHTML = "WIĘCEJ";
+        moreTextTwo.style.display = "none";
+    } else {
+        moreDotsTwo.style.display = "none";
+        moreButtonTwo.innerHTML = "MNIEJ";
+        moreTextTwo.style.display = "inline";
+    }
+}
 //change active element in menu
 jQuery(document).ready(function ($) {
     var sections = $('section')
