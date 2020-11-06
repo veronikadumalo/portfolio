@@ -222,8 +222,9 @@ hr{
 
 .summary_box img{
     
-    width:40%;
-    margin-left:40%;
+    width:300px;
+    float:right;
+    margin-right:10%;
     border-radius:50%;
     margin-bottom:2%;
     
