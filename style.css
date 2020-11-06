@@ -235,13 +235,13 @@ hr{
 }
 .responsive-container img {
     width: 350px;
-    border-radius: 50%;
+    
     margin-bottom: 2%;
+    
 }
 .responsive-container {
     width: 75%;
     margin: 0 auto;
-    padding: 15px;
     text-align: justify;
     color: #ecf2f9;  
 }
@@ -253,8 +253,7 @@ hr{
 }
 .responsive-container td{
     display:table-cell;
-    padding:30px;
-    font-size:14pt;
+    font-size:13pt;
 }
 
 @media (max-width: 767px){
