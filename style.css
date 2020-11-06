@@ -222,7 +222,7 @@ hr{
 
 .summary_box img{
     
-    width:300px;
+    width:25vw;
     float:right;
     margin-right:10%;
     border-radius:50%;
@@ -233,12 +233,44 @@ hr{
 .summary_box img:hover{
     transform:scale(1.1);
 }
+.responsive-container img {
+    width: 350px;
+    border-radius: 50%;
+    margin-bottom: 2%;
+}
+.responsive-container {
+    width: 75%;
+    margin: 0 auto;
+    padding: 15px;
+    text-align: justify;
+    color: #ecf2f9;  
+}
+.responsive-container table{
+    width:100%;
+}
+.responsive-container td::before{
+    display:none;
+}
+.responsive-container td{
+    display:table-cell;
+    padding:30px;
+    font-size:14pt;
+}
 
-.column p{
-    font-size:17px;
+@media (max-width: 767px){
+    .responsive-container{
+        width:90%;
+    }
+    .responsive-container td{
+        display:block;
+    }
+}
+
+.column p {
+    font-size: 17px;
     padding: 7% 25% 0 0;
-    text-align:justify;
-    float:left;
+    text-align: justify;
+    float: left;
 
 }
 
