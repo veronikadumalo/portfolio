@@ -216,34 +216,18 @@ hr{
     
 }
 
-.summary_box {
-    color: #ecf2f9;
-}
-
-.summary_box img{
-    
-    width:25vw;
-    float:right;
-    margin-right:10%;
-    border-radius:50%;
-    margin-bottom:2%;
-    
-}
-
-.summary_box img:hover{
-    transform:scale(1.1);
-}
 .responsive-container img {
     width: 350px;
-    
     margin-bottom: 2%;
     
 }
 .responsive-container {
-    width: 75%;
+    width: 70%;
     margin: 0 auto;
     text-align: justify;
-    color: #ecf2f9;  
+    color: #ecf2f9;
+    margin-bottom: 3%;
+    float: none;
 }
 .responsive-container table{
     width:100%;
@@ -253,16 +237,24 @@ hr{
 }
 .responsive-container td{
     display:table-cell;
-    font-size:13pt;
+    font-size:14pt;
 }
 
 @media (max-width: 767px){
-    .responsive-container{
-        width:90%;
+    .responsive-container {
+        width: 90%;
+        float: none;
     }
     .responsive-container td{
         display:block;
     }
+    .education {
+        float: none;
+    }
+}
+.education{
+    margin:3% auto;
+    float:right;
 }
 
 .column p {
@@ -270,7 +262,6 @@ hr{
     padding: 7% 25% 0 0;
     text-align: justify;
     float: left;
-
 }
 
 .column {
@@ -288,12 +279,7 @@ hr{
     
 }
 
-.education_table {
-    color: #ecf2f9;
-    width:90%;
-    padding:5% 0 5% 30%;
-    font-size:14pt;
-}
+
 .technologie_list{
     
     margin-left:17%;
