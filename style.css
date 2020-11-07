@@ -231,6 +231,7 @@ hr{
 }
 .responsive-container table{
     width:100%;
+    float: none;
 }
 .responsive-container td::before{
     display:none;
@@ -239,23 +240,28 @@ hr{
     display:table-cell;
     font-size:14pt;
 }
-
+.education {
+    font-size: 14px;
+    margin: 5% auto;
+    float: right;
+    
+}
 @media (max-width: 767px){
     .responsive-container {
         width: 90%;
         float: none;
+        text-align: center;
+        margin:10% auto;
     }
     .responsive-container td{
         display:block;
     }
     .education {
         float: none;
+        text-align: justify;
     }
 }
-.education{
-    margin:3% auto;
-    float:right;
-}
+
 
 .column p {
     font-size: 17px;
@@ -281,14 +287,16 @@ hr{
 
 
 .technologie_list{
-    
-    margin-left:17%;
+    width:100%;
     margin-top:3%;
+    text-align:center;
 }
 .technology {
-    display: inline-block;
-    width: 10%;
-    font-size: 60px;
+    display: inline;
+    padding:10px 30px;
+    font-size:60px;
+    
+    
 }
 .fab {
     color: #ecf2f9;
