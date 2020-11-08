@@ -525,19 +525,19 @@ hr{
         padding: 3px;
     }
     .contact-list table {
-        margin-top: 6%;
-        margin-bottom: 6%;
+        margin-top: 10%;
+        margin-bottom: 10%;
     }
     .contact-form {
-        margin-top:2%;
-        margin-bottom: 5%;
+        margin-top:5%;
+        margin-bottom:10%;
         max-width: 300px;
     }
     .contact-form label {
         font-size:12px;
     }
     .form-name{
-        margin-top:4%;
+        margin-top:10%;
         font-size:18px;
     }
     .contact-form input {
@@ -551,6 +551,10 @@ hr{
     .send_button {
         padding: 4px 15px;
         font-size:10px;
+    }
+    .contact h1 {
+        padding-top: 15%;
+        margin-bottom: 5%;
     }
     .last_text {
         font-size: 10px;
