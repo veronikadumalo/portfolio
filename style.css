@@ -246,21 +246,7 @@ hr{
     float: right;
     
 }
-@media (max-width: 767px){
-    .responsive-container {
-        width: 90%;
-        float: none;
-        text-align: center;
-        margin:10% auto;
-    }
-    .responsive-container td{
-        display:block;
-    }
-    .education {
-        float: none;
-        text-align: justify;
-    }
-}
+
 
 
 .column p {
@@ -320,35 +306,45 @@ hr{
         font-size: 40px;
         padding: 100px 0 30px 0;
     }
-
-.image_project {
-    width: 70%;
-    height:auto;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.1);
+.project {
+    color: #0d1a26;
+}
+.project img{
+    width: 500px;
+    margin:3% auto;
+}
+.project {
+    text-align: justify;
+    border-collapse: collapse;
+}
+.project p{
+    font-size:26px;
+    text-align:center;
+    font-weight:bold;
+    margin-bottom:2%;
+}
+.project td{
+    font-size:18px;
+    border-bottom:groove;
+    border-bottom-width: 1px;
+    border-bottom-color:#ecf2f9;
+    padding:30px 5px ; 
+}
+.project tr{
     
 }
+
+.image_project {
+    width: 500px;
+    height: auto;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.1);
+}
 .image_project:hover{
-   
    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
-   
 }
-.project_box h1 {
-    font-size: 17pt;
-    text-align: center;
-    padding: 0;
-}
-
-.project_box {
-    margin: 3% 0 0 3%;
-}
-
-.project_box p{
-    width:100%;
-    margin-left:10%;
-}
-
-.project_button{
-    margin: 0 0 5% 10%;   
+.project_button {
+    margin: 5% 0 0 0;
+    text-align:center;
 }
 .project_button a {
     text-decoration:none;
@@ -357,7 +353,8 @@ hr{
     padding: 10px 10px;
     font-size: 13px;
     cursor: pointer;
-    border: groove;
+    border:groove;
+    border-width:2px;
     border-color: #0d1a26;
     margin-left:5%;
     margin-top:3%;
@@ -400,6 +397,10 @@ hr{
 
 .more_text:after {
     left: 5px;
+   
+}
+.project hr {
+    visibility: hidden;
    
 }
 
@@ -510,4 +511,54 @@ hr{
     font-size:13px;
 }
 
+@media (max-width: 767px) {
+    .responsive-container {
+        width: 90%;
+        float: none;
+        text-align: center;
+        margin: 10% auto;
+    }
 
+    .responsive-container td {
+        display: block;
+        font-size:14px;
+    }
+
+    .education {
+        float: none;
+        text-align: justify;
+        
+    }
+    .project img {
+        width: 340px;
+        margin: -3% auto;
+    }
+
+    .project td {
+        text-align: justify;
+        padding: 0px;
+        font-size: 14px;
+        border:none;
+    }
+
+    .project p {
+        margin-top: 4%;
+        text-align: center;
+        font-size: 18px;
+    }
+    .project_button{
+        margin-bottom:15%;
+    }
+    .project_button a{
+        font-size:10px;
+        padding:5px 5px;
+        
+    }
+    .more_text{
+        font-size:13px;
+    }
+    .project hr{
+        margin-bottom:15%;
+        visibility:visible;
+    }
+}
