@@ -59,7 +59,6 @@ nav a.active {
 }
 
 .home_text a{
-    position:absolute;
     color: #0d1a26;
     text-decoration:none;
     border:groove;
@@ -559,6 +558,19 @@ hr{
     .last_text {
         font-size: 10px;
     }
+    .home_text p{
+        font-size:16px;
+    }
+    .home_text h1{
+        font-size:28px;
+    }
+    .home_text h2 {
+        font-size: 22px;
+        margin-bottom: 30px;
+    }
+    .home_text a{
 
-    
+        font-size:12px;
+        padding:5px;
+    }
  }
