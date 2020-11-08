@@ -249,6 +249,7 @@ hr{
     width:100%;
     margin-top:3%;
     text-align:center;
+    margin-bottom:3%;
 }
 .technology {
     display: inline;
@@ -301,12 +302,8 @@ hr{
     border-bottom:groove;
     border-bottom-width: 1px;
     border-bottom-color:#ecf2f9;
-    padding:30px 5px ; 
+    padding:70px 5px ; 
 }
-.project tr{
-    
-}
-
 .image_project {
     width: 20%;
     height: auto;
@@ -460,6 +457,19 @@ hr{
     padding: 1% 0;
     font-size: 13px;
 }
+label #sing-one,
+label #sing-two {
+    font-size: 30px;
+    color: #0d1a26;
+    float:right;
+    line-height:50px;
+    margin-right:30px;
+    cursor:pointer;
+    display:none;
+}
+.res-menu{
+    display:none;
+}
 
 @media (max-width: 767px) {
     .responsive-container {
@@ -569,8 +579,11 @@ hr{
         margin-bottom: 30px;
     }
     .home_text a{
-
         font-size:12px;
         padding:5px;
+    }
+    .menu ul li{
+        padding:20px 6px;
+        font-size:12px;
     }
  }
