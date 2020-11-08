@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="portfolio.js"></script>
     <script src="scrollreveal.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -211,23 +212,23 @@
         <div class="contact-list">
             <table>
                 <tr>
-                    <td class="contact-logo"><a href="" class="fab fa-linkedin"></a></td>
-                    <td><a href="" class="text-link">linkedin.com/in/veronika-dumalo-6b952b1b2/</a></td>
+                    <td class="contact-logo"><a href="https://www.linkedin.com/in/veronika-dumalo-6b952b1b2/" class="fab fa-linkedin" target="_blank"></a></td>
+                    <td><a href="https://www.linkedin.com/in/veronika-dumalo-6b952b1b2/" class="text-link" target="_blank">linkedin.com/in/veronika-dumalo-6b952b1b2/</a></td>
                 </tr>
                 <tr>
-                    <td class="contact-logo"><a href="" class="fab fa-github"></a></tdclass="contact-logo">
-                    <td><a href="" class="text-link">github.com/veronikadumalo </a></td>
+                    <td class="contact-logo"><a href="https://github.com/veronikadumalo" class="fab fa-github" target="_blank"></a></td class="contact-logo">
+                    <td><a href="https://github.com/veronikadumalo" class="text-link" target="_blank">github.com/veronikadumalo </a></td>
                 </tr>
                 <tr>
-                    <td class="contact-logo"><a href="" class="fa fa-envelope" ></a></td>
-                    <td><a href="" class="text-link">dumaloveronika@gmail.com </a></td>
+                    <td class="contact-logo"><a href="" class="fa fa-envelope" target="_blank"></a></td>
+                    <td><a href="" class="text-link" target="_blank">dumaloveronika@gmail.com </a></td>
                 </tr>
             </table>
         </div>
         <hr />
         <div class="contactForm">
             <p class="form-name">CONTACT FORM</p>
-            <form class="contact-form">
+            <form class="contact-form" method="post">
                 <label>Name:</label><br />
                 <input type="text" class="name"><br />
                 <label>Email:</label><br />
@@ -235,7 +236,7 @@
                 <label>Message:</label><br />
                 <textarea id="subject" name="subject" class="messege"></textarea><br />
                 <div class="button-area">
-                    <button type="submit" class="send_button" onclick="Send()">SEND</button>
+                    <button type="submit" class="send_button" onclick="sendEmail()">SEND</button>
                 </div>
             </form>
         </div>

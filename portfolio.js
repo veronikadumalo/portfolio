@@ -83,6 +83,19 @@ jQuery(document).ready(function ($) {
     });
 });
 //send button
+function sendEmail() {
+    Email.send({
+        Host: "smtp.yourisp.com",
+        Username: "dumaloveronika@gmail.com",
+        Password: "Samsung6102",
+        To: 'dumaloveronika@.gmail.com',
+        From: "dumalo44084@gmail.com",
+        Subject: "name",
+        Body: "messege",
+    }).then(
+        message => alert("mail sent successfully")
+    );
+}
 
 
 
