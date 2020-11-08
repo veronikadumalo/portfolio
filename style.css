@@ -226,7 +226,7 @@ hr{
     margin: 0 auto;
     text-align: justify;
     color: #ecf2f9;
-    margin-bottom: 3%;
+    padding-bottom: 3%;
     float: none;
 }
 .responsive-container table{
@@ -246,32 +246,6 @@ hr{
     float: right;
     
 }
-
-
-
-.column p {
-    font-size: 17px;
-    padding: 7% 25% 0 0;
-    text-align: justify;
-    float: left;
-}
-
-.column {
-    float: left;
-    width: 50%;
-    padding: 10px;
-    
-    
-}
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-    
-}
-
-
 .technologie_list{
     width:100%;
     margin-top:3%;
@@ -310,7 +284,7 @@ hr{
     color: #0d1a26;
 }
 .project img{
-    width: 500px;
+    width: 30vw;
     margin:3% auto;
 }
 .project {
@@ -335,7 +309,7 @@ hr{
 }
 
 .image_project {
-    width: 500px;
+    width: 20%;
     height: auto;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.1);
 }
@@ -391,111 +365,75 @@ hr{
     }
 
 .more_text:before {
-    left: -5px;
-   
+    left: -5px;  
 }
-
 .more_text:after {
     left: 5px;
-   
 }
 .project hr {
-    visibility: hidden;
-   
+    visibility: hidden;  
 }
-
-
-
-.contact_form {
-    margin: 7% 0 7% 0%;
+.contact-form {
+    max-width: 500px;
+    margin: auto;
 }
-.contact_form input{
-    width:75%;
+.contact-form input{
+    width:100%;
     height:40px;
     background-color:#0d1a26;
     border-color:#ecf2f9;
-    border-width:medium;
+    border-width:1px;
     margin:1% 0;
     color:#ecf2f9;
 }
-.contact_form textarea{
-    width:75%;
+.contact-form textarea{
+    width:100%;
     margin: 1% 0;
     height:100px;
     background-color:#0d1a26;
     border-color:#ecf2f9;
-    border-width:medium;
+    border-width:1px;
     color:#ecf2f9;
  }
-.contact_form label{
+.contact-form label{
     color:#ecf2f9;
 }
 .send_button {
-    margin-left:25%;
     padding: 8px 30px;
     background-color: #0d1a26;
     color: #ecf2f9;
     border-color: #ecf2f9;
-    border-width: medium;
-    cursor: pointer; 
-
+    border-width: 1px;
+    cursor: pointer;
 }
-
-.logo_list a {
-    font-size: 50px;
-    text-decoration: none;
+.contact-list table{
+    margin-top: 2%;
+    margin-bottom:2%;
+    margin-left: auto;
+    margin-right: auto;
 }
-.mail_text {
-    font-size: 15px;
-    text-decoration: none;
+.contact-list a{
+    text-decoration:none;
     color: #ecf2f9;
-    display: none;
 }
-.logo_list {
-    margin-left:23%;
-    margin-top:15%;
-}
-.logo_list li {
-    display: inline-block;
-    margin: 6%;
-    
-}
-
-.fa {
-    padding: 10px;
-    text-align: center;
-    text-decoration: none;
-    border-radius:10%;
-}
-
-.fa:hover {
+.contact-list a:hover{
     opacity: 0.7;
 }
-.fa-linkedin {
-    color: #ecf2f9;
+.contact-list td{
+    padding:10px;
 }
-.fa-linkedin:hover {
-    
-    color: #007bb5;
-    opacity: 1;
+.text-link{
+    font-size:18px;
 }
-.fa-github {
-    color: #ecf2f9;
+.contact-logo {
+    font-size: 38px;
+    text-decoration: none;
 }
-.fa-envelope {
-    color: #ecf2f9;
-    cursor: copy;
-}
-.mail_block:hover  .mail_text{
-    display:inline-block;
-}
-
 .contact {
     width: 100%;
-    height: 100vh;
+    height: auto;
     background-color: #0d1a26;
 }
-
 .contact h1{
     text-align:center;
     color: #ecf2f9;
@@ -503,12 +441,25 @@ hr{
     padding-top:5%;
     margin-bottom:3%;
 }
+.form-name {
+    margin-top:2%;
+    color: #ecf2f9;
+    text-align:center;
+    font-size:25px;
+}
+.button-area{
+    max-width:80px;
+    margin:auto;
+}
+.contactForm{
+    margin-bottom: 3%;
+}
 .last_text {
     text-align: center;
     color: #ecf2f9;
-    margin-top:2.5%;
+    margin-top: 2%;
     padding: 1% 0;
-    font-size:13px;
+    font-size: 13px;
 }
 
 @media (max-width: 767px) {
@@ -516,7 +467,7 @@ hr{
         width: 90%;
         float: none;
         text-align: center;
-        margin: 10% auto;
+        padding: 10% 0 ;
     }
 
     .responsive-container td {
@@ -528,6 +479,9 @@ hr{
         float: none;
         text-align: justify;
         
+    }
+    .project{
+        padding-bottom:0;
     }
     .project img {
         width: 340px;
@@ -561,4 +515,46 @@ hr{
         margin-bottom:15%;
         visibility:visible;
     }
-}
+    .text-link{
+        font-size:12px;
+    }
+    .contact-logo{
+        font-size:20px;
+    }
+    .contact-list td {
+        padding: 3px;
+    }
+    .contact-list table {
+        margin-top: 6%;
+        margin-bottom: 6%;
+    }
+    .contact-form {
+        margin-top:2%;
+        margin-bottom: 5%;
+        max-width: 300px;
+    }
+    .contact-form label {
+        font-size:12px;
+    }
+    .form-name{
+        margin-top:4%;
+        font-size:18px;
+    }
+    .contact-form input {
+        height: 25px;
+        border-width:1px;
+    }
+    .contact-form textarea {
+        height: 60px;
+        border-width: 1px;
+    }
+    .send_button {
+        padding: 4px 15px;
+        font-size:10px;
+    }
+    .last_text {
+        font-size: 10px;
+    }
+
+    
+ }

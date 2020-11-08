@@ -134,7 +134,6 @@
         <div class="responsive-container project">
             <table>
                 <tr>
-                    
                     <td>
                         <a target="_blank" href="http://spcmz.czest.pl/glowna.html"><img src="image/spcmz.png" class="image_project" /></a>
                     </td>
@@ -205,38 +204,42 @@
                 </tr>
             </table>
         </div>
-        <hr />
     </section>
     <section id="contact" class="contact">
         <h1>CONTACT</h1>
         <hr />
-        <div class="contactForm">
-            <div class="row">
-                <div class="column">
-                    <div class="logo_contact">
-                        <ul class="logo_list">
-                            <li><a href="" class="fab fa-linkedin"></a></li>
-                            <li><a href="" class="fab fa-github"></a></li>
-                            <li class="mail_block"><a href=""><i class="fa fa-envelope"></i><span class="mail_text">dumaloveronika@gmail.com</span></a></li>
-                            <li></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="column">
-                    <form class="contact_form">
-                        <label>Name:</label><br />
-                        <input type="text" class="name"><br />
-                        <label>Email:</label><br />
-                        <input type="email" class="email" /><br />
-                        <label>Message:</label><br />
-                        <textarea id="subject" name="subject" class="messege"></textarea><br />
-                        <button type="submit" class="send_button" onclick="Send()">SEND</button>
-                    </form>
-                </div>
-            </div>
+        <div class="contact-list">
+            <table>
+                <tr>
+                    <td class="contact-logo"><a href="" class="fab fa-linkedin"></a></td>
+                    <td><a href="" class="text-link">linkedin.com/in/veronika-dumalo-6b952b1b2/</a></td>
+                </tr>
+                <tr>
+                    <td class="contact-logo"><a href="" class="fab fa-github"></a></tdclass="contact-logo">
+                    <td><a href="" class="text-link">github.com/veronikadumalo </a></td>
+                </tr>
+                <tr>
+                    <td class="contact-logo"><a href="" class="fa fa-envelope" ></a></td>
+                    <td><a href="" class="text-link">dumaloveronika@gmail.com </a></td>
+                </tr>
+            </table>
         </div>
         <hr />
-
+        <div class="contactForm">
+            <p class="form-name">CONTACT FORM</p>
+            <form class="contact-form">
+                <label>Name:</label><br />
+                <input type="text" class="name"><br />
+                <label>Email:</label><br />
+                <input type="email" class="email" /><br />
+                <label>Message:</label><br />
+                <textarea id="subject" name="subject" class="messege"></textarea><br />
+                <div class="button-area">
+                    <button type="submit" class="send_button" onclick="Send()">SEND</button>
+                </div>
+            </form>
+        </div>
+        <hr />
         <p class="last_text">© Veronika Dumalo 2020</p>
     </section>
     <script src="scroll.js"></script>
