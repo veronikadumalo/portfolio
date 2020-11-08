@@ -15,7 +15,7 @@ body {
     width: 100%;
     position: fixed; /* Safari */
     height: auto;
-    background-color: rgba(209, 224, 224, 0.7);
+    background-color: rgba(209, 224, 224, 0.9);
 }
 .menu ul{
     float:right;
@@ -36,6 +36,9 @@ body {
 }
 nav a.active {
    font-weight: bold;
+}
+nav a:hover {
+    text-shadow: 2px 2px 20px #0d1a26;
 }
 .home_text {
     position: absolute;
