@@ -373,31 +373,38 @@ hr{
     visibility: hidden;  
 }
 .contact-form {
-    max-width: 500px;
+    max-width: 550px;
     margin: auto;
+    
+    
+    
 }
 .contact-form input{
-    width:100%;
+    width:86%;
     height:40px;
     background-color:#0d1a26;
     border-color:#ecf2f9;
     border-width:1px;
-    margin:1% 0;
     color:#ecf2f9;
+    float:right;
+    
+
 }
 .contact-form textarea{
-    width:100%;
-    margin: 1% 0;
-    height:100px;
+    width:86%;
+    height:150px;
     background-color:#0d1a26;
     border-color:#ecf2f9;
     border-width:1px;
     color:#ecf2f9;
+    float:right;
  }
 .contact-form label{
     color:#ecf2f9;
+    margin:2% 0;
 }
 .send_button {
+    margin-top:40%;
     padding: 8px 30px;
     background-color: #0d1a26;
     color: #ecf2f9;
@@ -447,8 +454,10 @@ hr{
     font-size:25px;
 }
 .button-area{
-    max-width:80px;
+    
+    max-width:50px;
     margin:auto;
+    
 }
 .contactForm{
     margin-bottom: 3%;
@@ -472,6 +481,12 @@ label #sing-two {
 }
 .res-menu{
     display:none;
+}
+.error{
+    visibility:hidden;
+    color:#fb3119;
+    font-size:13px;
+    margin-left:14%;
 }
 
 @media (max-width: 767px) {

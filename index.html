@@ -227,13 +227,16 @@
         <hr />
         <div class="contactForm">
             <p class="form-name">CONTACT FORM</p>
-            <form class="contact-form" >
-                <label>Name:</label><br />
-                <input type="text" class="name"><br />
-                <label>Email:</label><br />
-                <input type="email" class="email" /><br />
-                <label>Message:</label><br />
-                <textarea id="subject" name="subject" class="messege"></textarea><br />
+            <form class="contact-form">
+                <span class="error" id="error">Enter name</span><br />
+                <label for="name">Name:</label>
+                <input type="text" class="name" id="name" value=""><br /><br />
+                <span class="error" id="error">Enter name</span><br />
+                <label for="email">Email:</label>
+                <input type="email" class="email" id="name" /><br /><br />
+                <span class="error" id="error">Enter name</span><br />
+                <label for="message">Message:</label>
+                <textarea id="messege" name="subject" class="message"></textarea>
                 <div class="button-area">
                     <button type="submit" class="send_button" onclick="sendEmail()">SEND</button>
                 </div>
@@ -243,6 +246,7 @@
         <p class="last_text">© Veronika Dumalo 2020</p>
     </section>
     <script src="scroll.js"></script>
+    <script src="send.js"></script>
  
 </body>
 </html>
