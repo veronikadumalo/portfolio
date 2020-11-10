@@ -21,3 +21,15 @@ function checkEmail() {
         spanEmail.style.visibility = 'visible';
     }
 }
+
+document.getElementById("message").addEventListener("input", checkMessage);
+document.getElementById("message").addEventListener("focus", checkMessage);
+var spanMessage = document.getElementById("errorMessage");
+function checkMessage() {
+    var messagetext = document.getElementById("message").value;
+    if (messagetext !== "") {
+        spanMessage.style.visibility = 'hidden';
+    } else {
+        spanMessage.style.visibility = 'visible';
+    }
+}
