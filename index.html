@@ -227,24 +227,29 @@
         <hr />
         <div class="contactForm">
             <p class="form-name">CONTACT FORM</p>
-            <form class="contact-form" method="post" action="contact-mail.php">
+            <form class="contact-form" method="post" action="mailto:dumaloveronika@gmail.com" enctype="text/plain">
 
                 <span class="errorName" id="errorName">Enter name</span><br />
                 <label for="name">Name:</label>
-                <input type="text" class="name" id="name" value=""><br /><br />
+                <input type="text" class="name" id="name" name="name"><br /><br />
 
                 <span class="errorEmail" id="errorEmail" value="">Enter email</span><br />
                 <label for="email">Email:</label>
-                <input type="email" class="email" id="email" /><br /><br />
+                <input type="email" class="email" id="email" name="email" /><br /><br />
 
                 <span class="errorMessage" id="errorMessage">Enter message</span><br />
                 <label for="message">Message:</label>
-                <textarea id="message" name="subject" class="message"></textarea>
+                <textarea id="message" class="message" name="message"></textarea>
 
                 <div class="button-area">
-                    <input type="submit" class="send_button" value="SEND">
+                    <input type="submit" class="send_button" value="SEND" name="submit">
                 </div>
 
+            </form>
+            <form  method="post"  action="https://formspree.io/dumaloveronika@gmail.com">
+                <input type="text" name="name">
+                <input type="email" name="_replyto">
+                <input type="submit" value="Send">
             </form>
         </div>
         <hr />
