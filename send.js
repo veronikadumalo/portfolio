@@ -4,14 +4,17 @@ var spanName = document.getElementById("errorName");
 var nameTrue = false;
 var emailTrue = false;
 var messageTrue = false;
+document.getElementById("send_button").disabled = true;
 function checkName() {
     var name = document.getElementById("name").value;
     if (name !== "") {
         spanName.style.visibility = 'hidden';
         nameTrue = true;
+        CheckAll();
     } else {
         spanName.style.visibility = 'visible';
         nameTrue = false;
+        CheckAll();
     }
 }
 
@@ -23,9 +26,12 @@ function checkEmail() {
     if (email !== "") {
         spanEmail.style.visibility = 'hidden';
         emailTrue = true;
+        CheckAll();
     } else {
         spanEmail.style.visibility = 'visible';
         emailTrue = false;
+        CheckAll();
+        
     }
 }
 
@@ -37,8 +43,26 @@ function checkMessage() {
     if (messagetext !== "") {
         spanMessage.style.visibility = 'hidden';
         messageTrue = true;
+        CheckAll();
     } else {
         spanMessage.style.visibility = 'visible';
         messageTrue = false;
+        CheckAll();
+    }
+    
+    
+}
+
+function CheckAll(){
+    if(messageTrue==true && emailTrue==true && nameTrue==true ){
+        document.getElementById("send_button").disabled = false;
+    }else{
+        document.getElementById("send_button").disabled = true;
     }
 }
+
+function sendEmail(){
+    document.getElementById("contact-form").action="mailto:dumaloveronika@gmail.com";
+}
+
+

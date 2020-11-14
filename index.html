@@ -211,10 +211,6 @@
         <div class="contact-list">
             <table>
                 <tr>
-                    <td class="contact-logo"><a href="https://www.linkedin.com/in/veronika-dumalo-6b952b1b2/" class="fab fa-linkedin" target="_blank"></a></td>
-                    <td><a href="https://www.linkedin.com/in/veronika-dumalo-6b952b1b2/" class="text-link" target="_blank">linkedin.com/in/veronika-dumalo-6b952b1b2/</a></td>
-                </tr>
-                <tr>
                     <td class="contact-logo"><a href="https://github.com/veronikadumalo" class="fab fa-github" target="_blank"></a></td class="contact-logo">
                     <td><a href="https://github.com/veronikadumalo" class="text-link" target="_blank">github.com/veronikadumalo </a></td>
                 </tr>
@@ -222,30 +218,36 @@
                     <td class="contact-logo"><a href="" class="fa fa-envelope" target="_blank"></a></td>
                     <td><a href="" class="text-link" target="_blank">dumaloveronika@gmail.com </a></td>
                 </tr>
+                 <tr>
+                    <td class="contact-logo"><a href="https://www.linkedin.com/in/veronika-dumalo-6b952b1b2/" class="fab fa-linkedin" target="_blank"></a></td>
+                    <td><a href="https://www.linkedin.com/in/veronika-dumalo-6b952b1b2/" class="text-link" target="_blank">linkedin.com/in/veronika-dumalo-6b952b1b2/</a></td>
+                </tr>
             </table>
         </div>
         <hr />
         <div class="contactForm">
             <p class="form-name">CONTACT FORM</p>
-            <form class="contact-form" method="" >
+            <form class="contact-form" method="post" action="mailto:dumaloveronika@gmail.com" enctype="text/plain" >
 
                 <span class="errorName" id="errorName">Enter name</span><br />
                 <label for="name">Name:</label>
-                <input type="text" class="name" id="name" ><br /><br />
+                <input type="text" class="name" id="name" name="Name"><br /><br />
 
                 <span class="errorEmail" id="errorEmail" >Enter email</span><br />
                 <label for="email">Email:</label>
-                <input type="email" class="email" id="email" /><br /><br />
+                <input type="email" class="email" id="email" name="Email" /><br /><br />
 
                 <span class="errorMessage" id="errorMessage">Enter message</span><br />
                 <label for="message">Message:</label>
-                <textarea id="message" class="message" ></textarea>
+                <textarea id="message" class="message" name="Message"></textarea>
 
                 <div class="button-area">
-                    <button type="submit" class="send_button" onclick="Send()">SEND</button>
+                    <button type="submit" class="send_button" id="send_button">SEND</button>
                 </div>
+                
 
             </form>
+
            
         </div>
         <hr />
