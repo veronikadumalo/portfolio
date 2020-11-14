@@ -227,7 +227,7 @@
         <hr />
         <div class="contactForm">
             <p class="form-name">CONTACT FORM</p>
-            <form class="contact-form">
+            <form class="contact-form" method="post" action="contact-mail.php">
 
                 <span class="errorName" id="errorName">Enter name</span><br />
                 <label for="name">Name:</label>
@@ -242,7 +242,7 @@
                 <textarea id="message" name="subject" class="message"></textarea>
 
                 <div class="button-area">
-                    <button type="submit" class="send_button" onclick="sendEmail()">SEND</button>
+                    <input type="submit" class="send_button" value="SEND">
                 </div>
 
             </form>
