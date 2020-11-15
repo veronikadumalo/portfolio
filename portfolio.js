@@ -32,35 +32,35 @@ function MoreProjectTwo() {
     }
 }
 function MoreProjectOneEN() {
-    var moreDotsOneEN = document.getElementById("moreDotsOne");
-    var moreTextOne = document.getElementById("moreTextOne");
-    var moreButtonOne = document.getElementById("moreButtonOne");
+    var moreDotsOneEN = document.getElementById("moreDotsOneEN");
+    var moreTextOneEN = document.getElementById("moreTextOneEN");
+    var moreButtonOneEN = document.getElementById("moreButtonOneEN");
 
 
-    if (moreDotsOne.style.display === "none") {
-        moreDotsOne.style.display = "inline";
-        moreButtonOne.innerHTML = "WIĘCEJ";
-        moreTextOne.style.display = "none";
+    if (moreDotsOneEN.style.display === "none") {
+        moreDotsOneEN.style.display = "inline";
+        moreButtonOneEN.innerHTML = "MORE";
+        moreTextOneEN.style.display = "none";
     } else {
-        moreDotsOne.style.display = "none";
-        moreButtonOne.innerHTML = "MNIEJ";
-        moreTextOne.style.display = "inline";
+        moreDotsOneEN.style.display = "none";
+        moreButtonOneEN.innerHTML = "LESS";
+        moreTextOneEN.style.display = "inline";
     }
 }
 function MoreProjectTwoEN() {
-    var moreDotsTwo = document.getElementById("moreDotsTwo");
-    var moreTextTwo = document.getElementById("moreTextTwo");
-    var moreButtonTwo = document.getElementById("moreButtonTwo");
+    var moreDotsTwoEN = document.getElementById("moreDotsTwoEN");
+    var moreTextTwoEN = document.getElementById("moreTextTwoEN");
+    var moreButtonTwoEN = document.getElementById("moreButtonTwoEN");
 
 
-    if (moreDotsTwo.style.display === "none") {
-        moreDotsTwo.style.display = "inline";
-        moreButtonTwo.innerHTML = "WIĘCEJ";
-        moreTextTwo.style.display = "none";
+    if (moreDotsTwoEN.style.display === "none") {
+        moreDotsTwoEN.style.display = "inline";
+        moreButtonTwoEN.innerHTML = "MORE";
+        moreTextTwoEN.style.display = "none";
     } else {
-        moreDotsTwo.style.display = "none";
-        moreButtonTwo.innerHTML = "MNIEJ";
-        moreTextTwo.style.display = "inline";
+        moreDotsTwoEN.style.display = "none";
+        moreButtonTwoEN.innerHTML = "LESS";
+        moreTextTwoEN.style.display = "inline";
     }
 }
 //change active element in menu

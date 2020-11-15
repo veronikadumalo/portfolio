@@ -15,7 +15,7 @@
 
 </head>
 <body>
-    
+
 
     <section class="animation-area" id="animation-area">
         <ul class="boll_animation">
@@ -40,10 +40,10 @@
                     <li><a href="index.html" class='iteam_menu'>EN</a></li>
                 </ul>
             </nav>
-            
+
         </div>
         <div class='home_text'>
-            
+
             <h1 class='p_two_home'>Veronika Dumalo</h1>
             <h2 class='p_three_home'>Junior Front-End Developer</h2>
             <a href="#about">OTWÓRZ PROFIL</a>
@@ -58,7 +58,7 @@
         <div class="responsive-container">
             <table class="summary_box">
                 <tr>
-                    <td><img src="image/me2.png" class="summary-image"/></td>
+                    <td><img src="image/me2.png" class="summary-image" /></td>
                     <td>
                         Jestem początkującym web developerem.
                         Jestem magistrem Informatyki. Na studiach otrzymałam  obszerną wiedzę i dużo informacji w zakresie technologii internetowych i grafiki 3D. Potrafie robić różne strony internetowe oraz aplikacje, wykorzystując
@@ -137,6 +137,35 @@
             <table>
                 <tr class="project_box">
                     <td>
+                        <a target="_blank" href=""><img src="image/portfolio_screen.png" class="image_project" /></a>
+                    </td>
+                    <td>
+                        <p>Portfolio</p>
+                        Strona typu Landing Page zawiera informacje o mnie, umiejętnościach i technologiach, które wykorzystuje przy tworzeniu projektów.
+                        <span id="moreDotsTwo">...</span>
+                        <span id="moreTextTwo">
+
+                            <br />
+                            <br /> Projekt zawiera minimalistyczny design. Animacja kul wykonuje się za pomocą CSS. Logo strony wykonano samodzielnie w Adobe Photoshop.
+                            <br /><br /> Wykorzystene biblioteki/frameworki:
+                            <br /> - JQuery
+                            <br /> - emailjs-com
+                            <br /> - ScrollReveal.js
+                            <br />
+                        </span>
+                        <br />
+                        <br />
+                        <a onclick="MoreProjectTwo()" id="moreButtonTwo" class="more_text">WIĘCEJ</a>
+                        <br />
+                        <div class="project_button">
+                            <a href="">STRONA STARTOWA</a>
+                            <a href="h">KOD</a>
+                        </div>
+                        <hr />
+                    </td>
+                </tr>
+                <tr class="project_box">
+                    <td>
                         <a target="_blank" href="http://spcmz.czest.pl/glowna.html"><img src="image/spcmz.png" class="image_project" /></a>
                     </td>
                     <td>
@@ -153,7 +182,7 @@
                 </tr>
                 <tr class="project_box">
                     <td>
-                        <a target="_blank" href="http://spcmz.czest.pl/glowna.html"><img src="image/sw.png" class="image_project" /></a>
+                        <a target="_blank" href="https://github.com/veronikadumalo/veronikadumalo_phoneshop.git"><img src="image/sw.png" class="image_project" /></a>
                     </td>
                     <td>
                         <p>Smartphone World</p>
@@ -172,37 +201,7 @@
                         <a onclick="MoreProjectOne()" id="moreButtonOne" class="more_text">WIĘCEJ</a>
                         <br />
                         <div class="project_button">
-                            <a href="">STRONA STARTOWA</a>
                             <a href="https://github.com/veronikadumalo/veronikadumalo_phoneshop.git">KOD</a>
-                        </div>
-                        <hr />
-                    </td>
-                </tr>
-                <tr class="project_box">
-                    <td>
-                        <a target="_blank" href=""><img src="image/portfolio_screen.png" class="image_project" /></a>
-                    </td>
-                    <td>
-                        <p>Portfolio</p>
-                        Strona typu Landing Page zawiera informacje o mnie, umiejętnościach i technologiach, które wykorzystuje przy tworzeniu projektów.
-                        <span id="moreDotsTwo">...</span>
-                        <span id="moreTextTwo">
-                            
-                            <br />
-                            <br /> Projekt zawiera minimalistyczny design. Animacja kul wykonuje się za pomocą CSS. Logo strony wykonano samodzielnie w Adobe Photoshop.
-                            <br /><br /> Wykorzystene biblioteki/frameworki:
-                            <br /> - JQuery
-                            <br /> - emailjs-com
-                            <br /> - ScrollReveal.js
-                            <br />
-                        </span>
-                        <br />
-                        <br />
-                        <a onclick="MoreProjectTwo()" id="moreButtonTwo" class="more_text">MORE</a>
-                        <br />
-                        <div class="project_button">
-                            <a href="">STRONA STARTOWA</a>
-                            <a href="h">KOD</a>
                         </div>
                         <hr />
                     </td>
@@ -231,16 +230,23 @@
         </div>
         <hr />
         <div class="contactForm">
-            <p class="form-name">FORMULARZ KONTAKTOWY</p>
-            <form class="contact-form">
-                <label>Imię:   </label><br />
-                <input type="text" class="name"><br />
-                <label>Adres email:</label><br />
-                <input type="email" class="email" /><br />
-                <label>Treść wiadomości:</label><br />
-                <textarea id="subject" name="subject" class="messege"></textarea><br />
+            <p class="form-name">CONTACT FORM</p>
+            <form class="contact-form" method="post" action="mailto:dumaloveronika@gmail.com" enctype="text/plain">
+
+                <span class="errorName" id="errorName">Enter name</span><br />
+                <label for="name">Imię:</label>
+                <input type="text" class="name" id="name" name="Name"><br /><br />
+
+                <span class="errorEmail" id="errorEmail">Enter email</span><br />
+                <label for="email">Email:</label>
+                <input type="email" class="email" id="email" name="Email" /><br /><br />
+
+                <span class="errorMessage" id="errorMessage">Enter message</span><br />
+                <label for="message">Wiadomość:</label>
+                <textarea id="message" class="message" name="Message"></textarea>
+
                 <div class="button-area">
-                    <button type="submit" class="send_button" onclick="Send()">WYSŁAĆ</button>
+                    <button type="submit" class="send_button" id="send_button">SEND</button>
                 </div>
             </form>
         </div>
@@ -248,6 +254,7 @@
         <p class="last_text">© Veronika Dumalo 2020</p>
     </section>
     <script src="scroll.js"></script>
- 
+    <script src="send.js"></script>
+
 </body>
 </html>
