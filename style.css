@@ -350,6 +350,12 @@ hr{
 #moreTextTwoEN {
     display: none;
 }
+#moreTextThree {
+    display: none;
+}
+#moreTextThreeEN {
+    display: none;
+}
 
 .more_text {
     cursor: pointer;

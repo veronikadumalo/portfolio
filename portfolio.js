@@ -31,6 +31,22 @@ function MoreProjectTwo() {
         moreTextTwo.style.display = "inline";
     }
 }
+function MoreProjectThree() {
+    var moreDotsThree = document.getElementById("moreDotsThree");
+    var moreTextThree = document.getElementById("moreTextThree");
+    var moreButtonThree = document.getElementById("moreButtonThree");
+
+
+    if (moreDotsThree.style.display === "none") {
+        moreDotsThree.style.display = "inline";
+        moreButtonThree.innerHTML = "WIĘCEJ";
+        moreTextThree.style.display = "none";
+    } else {
+        moreDotsThree.style.display = "none";
+        moreButtonThree.innerHTML = "MNIEJ";
+        moreTextThree.style.display = "inline";
+    }
+}
 function MoreProjectOneEN() {
     var moreDotsOneEN = document.getElementById("moreDotsOneEN");
     var moreTextOneEN = document.getElementById("moreTextOneEN");
@@ -61,6 +77,23 @@ function MoreProjectTwoEN() {
         moreDotsTwoEN.style.display = "none";
         moreButtonTwoEN.innerHTML = "LESS";
         moreTextTwoEN.style.display = "inline";
+    }
+}
+
+function MoreProjectThreeEN() {
+    var moreDotsThreeEN = document.getElementById("moreDotsThreeEN");
+    var moreTextThreeEN = document.getElementById("moreTextThreeEN");
+    var moreButtonThreeEN = document.getElementById("moreButtonThreeEN");
+
+
+    if (moreDotsThreeEN.style.display === "none") {
+        moreDotsThreeEN.style.display = "inline";
+        moreButtonThreeEN.innerHTML = "MORE";
+        moreTextThreeEN.style.display = "none";
+    } else {
+        moreDotsThreeEN.style.display = "none";
+        moreButtonThreeEN.innerHTML = "LESS";
+        moreTextThreeEN.style.display = "inline";
     }
 }
 //change active element in menu
