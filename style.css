@@ -504,7 +504,7 @@ label #sing-two {
         font-size: 30px;
     }
     .about-section-name::before{
-        margin: 4% auto; 
+        margin: 8% auto; 
     }
     .education-section{
         display:block;
