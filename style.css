@@ -488,15 +488,10 @@ label #sing-two {
 }
 
 @media (max-width: 767px) {
-    .responsive-container {
-        width: 90%;
-        float: none;
-        text-align: center;
-        padding: 10% 0 ;
-    }
     .summary-box{
-        width:95%;
+        width:90%;
         display: block;
+        text-align:center;
     }
     .summaty-text{
         font-size: 13px;
@@ -508,18 +503,27 @@ label #sing-two {
         font-size: 35px;
     }
     .about-section-name::before{
-    margin: 4% auto; 
-    }
-    .responsive-container-education {
-        width: 90%;
-        float: none;
-        text-align: justify;
+        margin: 4% auto; 
     }
     .education-section{
         display:block;
-        width:95%;
+        width:90%;
         font-size:13px;
-        
+    }
+    .home-name{
+        font-size: 28px;
+    }
+    .home-position{
+        font-size: 22px;
+        margin-bottom: 30px;
+    }
+    .home-button{
+        font-size:12px;
+        padding:5px;
+    }
+    .menu-item{
+        padding:20px 6px;
+        font-size:12px;
     }
 
  }
