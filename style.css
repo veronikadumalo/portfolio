@@ -18,13 +18,13 @@ body {
     background-color: rgba(209, 224, 224, 0.9);
     z-index: 1;
 }
-.menu ul{
+.menu-list{
     float:right;
     height: auto;
     list-style:none;
 
 }
-.menu ul li{
+.menu-list-item{
     display: inline-block;
     padding: 30px 15px;
     text-transform:uppercase;
@@ -521,8 +521,8 @@ label #sing-two {
         font-size:12px;
         padding:5px;
     }
-    .menu-item{
-        padding:20px 6px;
+    .menu-list-item{
+        padding:20px 5px;
         font-size:12px;
     }
 
