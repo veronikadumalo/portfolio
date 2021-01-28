@@ -1,9 +1,9 @@
 window.scroll = new ScrollReveal();
-scroll.reveal('.project_box', {
+scroll.reveal('.project-box', {
     opacity: 0,
     interval: 600
 });
-scroll.reveal('.summary_box', {
+scroll.reveal('.summary-box', {
     delay: 250,
     
     
