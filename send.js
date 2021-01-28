@@ -4,7 +4,7 @@ var spanName = document.getElementById("errorName");
 var nameTrue = false;
 var emailTrue = false;
 var messageTrue = false;
-document.getElementById("send_button").disabled = true;
+document.getElementById("send-button").disabled = true;
 function checkName() {
     var name = document.getElementById("name").value;
     if (name !== "") {
@@ -55,9 +55,9 @@ function checkMessage() {
 
 function CheckAll(){
     if(messageTrue==true && emailTrue==true && nameTrue==true ){
-        document.getElementById("send_button").disabled = false;
+        document.getElementById("send-button").disabled = false;
     }else{
-        document.getElementById("send_button").disabled = true;
+        document.getElementById("send-button").disabled = true;
     }
 }
 
