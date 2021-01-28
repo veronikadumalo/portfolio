@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <title>Veronika Dumalo</title>
@@ -6,115 +6,84 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
-    <script src="portfolio.js"></script>
-    <script src="scrollreveal.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 </head>
 <body>
-    
-
     <section class="animation-area" id="animation-area">
-        <ul class="boll_animation">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+        <ul class="ball-animation">
+            <li class="ball"></li>
+            <li class="ball"></li>
+            <li class="ball"></li>
+            <li class="ball"></li>
+            <li class="ball"></li>
+            <li class="ball"></li>
+            <li class="ball"></li>
+            <li class="ball"></li>
+            <li class="ball"></li>
         </ul>
         <div class='menu'>
             <nav>
                 <ul>
-                    <li><a href="#animation-area" class='iteam_menu active'>HOME</a></li>
-                    <li><a href="#about" class='iteam_menu'>ABOUT ME</a></li>
-                    <li><a href="#projects" class='iteam_menu'>PROJECTS</a></li>
-                    <li><a href="#contact" class='iteam_menu'>CONTACT</a></li>
-                    <li><a href="index-pl.html" class="iteam_menu">PL</a></li>
+                    <li><a href="#animation-area" class="menu-item active">HOME</a></li>
+                    <li><a href="#about" class="menu-item">ABOUT ME</a></li>
+                    <li><a href="#projects" class="menu-item">PROJECTS</a></li>
+                    <li><a href="#contact" class="menu-item">CONTACT</a></li>
+                    <li><a href="index-pl.html" class="menu-item">PL</a></li>
                 </ul>
             </nav>
-            
         </div>
-        <div class='home_text'>
-            
-            <h1 class='p_two_home'>Veronika Dumalo</h1>
-            <h2 class='p_three_home'>Junior Front-End Developer</h2>
-            <a href="#about">VIEV PROFILE</a>
+        <div class="home-text">
+            <h1 class="home-name">Veronika Dumalo</h1>
+            <h2 class="home-position">Junior Front-End Developer</h2>
+            <a href="#about" class="home-button">VIEV PROFILE</a>
         </div>
     </section>
-
     <section class="about" id="about">
-        <h1>ABOUT ME</h1>
-        <hr />
-        <p>SUMMARY</p>
-
-        <div class="responsive-container">
-            <table class="summary_box">
-                <tr>
-                    <td><img src="image/me2.png" class="summary-image"/></td>
-                    <td>
-                        I am a beginner web developer.
-                        I am a master of Informatics. During my studies I received extensive knowledge and a lot of information in the field of Internet technologies and 3D graphics. I can make various websites and applications, using
-                        HTML, CSS, JS, PHP and databases. I am currently learning about React's capabilities. I am open to learning other technologies and ready for new challenges.
-                    </td>
-                </tr>
-            </table>
+        <h1 class="section-title">ABOUT ME</h1>
+        <p class="about-section-name">SUMMARY</p>
+        <div class="summary-box">
+            <div class="summary-section">
+                <img src="image/me2.png" class="summary-image" />
+            </div>
+            <div class="summary-section">
+                <p class="summaty-text">
+                    I am a beginner web developer.
+                    I am a master of Informatics. During my studies I received extensive knowledge and a lot of information in the field of Internet technologies and 3D graphics. I can make various websites and applications, using
+                    HTML, CSS, JS, PHP and databases. I am currently learning about React's capabilities. I am open to learning other technologies and ready for new challenges.
+            </p>
+            </div>
         </div>
-        <hr />
-        <p>EDUCATION</p>
-        <div class="responsive-container education">
-            <table>
-                <tr>
-                    <td>2015-2019</td>
-                    <td>
-                        CZESTOCHOWA UNIVERSITY OF TECHNOLOGY
-                    </td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>
-                        FACULTY OF ELECTRICAL ENGINEERING
-                        <br />
-                        COURS: Informatics
-                        <br />
-                        SPECIALTY: Internet technologies and multimedia techniques
-                        <br />
-                        TITLE: Bachelor of Engineering
-                        <br />
-                        <br />
-                        <br />
-                    </td>
-                </tr>
-                <tr>
-                    <td>2019-2020</td>
-                    <td>
-                        CZESTOCHOWA UNIVERSITY OF TECHNOLOGY
-                    </td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>
-                        FACULTY OF ELECTRICAL ENGINEERING
-                        <br />
-                        COURS: Informatics
-                        <br />
-                        SPECIALTY: Image Engineering and Computer Graphics
-                        <br />
-                        TITLE: Master of Engineering
-                    </td>
-                </tr>
-            </table>
+        <p class="about-section-name">EDUCATION</p>
+        <div class="education-box">
+            <div class="education-section">
+                <div class="education-column">
+                    <p>2015-2019</p>
+                </div>
+                <div class="education-column">
+                    <p>CZESTOCHOWA UNIVERSITY OF TECHNOLOGY</p>
+                    <p>FACULTY OF ELECTRICAL ENGINEERING</p>
+                    <p>COURS: Informatics</p>
+                    <p>SPECIALTY: Internet technologies and multimedia techniques</p>
+                    <p>TITLE: Bachelor of Engineering</p>
+                </div>
+            </div>
+            <div class="education-section">
+                <div class="education-column">
+                    <p>2019-2020</p>
+                </div>
+                <div class="education-column">
+                    <p>CZESTOCHOWA UNIVERSITY OF TECHNOLOGY</p>
+                    <p>FACULTY OF ELECTRICAL ENGINEERING</p>
+                    <p>COURS: Informatics</p>
+                    <p>SPECIALTY: Image Engineering and Computer Graphics</p>
+                    <p>TITLE: Master of Engineeringr</p>
+                </div>
+            </div>
         </div>
-        <hr />
         <div class="technologies">
-            <p>TECHNOLOGIES</p>
-            <div class="image_technologies">
-                <ul class="technologie_list">
+            <p class="about-section-name">TECHNOLOGIES</p>
+            <div class="image-technologies">
+                <ul class="technologie-list">
                     <li class="technology"><i class="fab fa-html5"></i></li>
                     <li class="technology"><i class="fab fa-css3-alt"></i></li>
                     <li class="technology"><i class="fab fa-sass"></i></li>
@@ -127,152 +96,124 @@
             </div>
         </div>
     </section>
-
     <section id="projects" class="projects">
-        <h1>PROJECTS</h1>
-        <hr />
-        <div class="responsive-container project">
-            <table>
-                <tr class="project_box">
-                    <td>
-                        <a target="_blank" href="http://u95417.test-handyhost.ru/"><img src="image/wedding_website.png" class="image_project" /></a>
-                    </td>
-                    <td>
-                        <p>Wedding website</p>
-                        A Landing Page made in Wordpress with the Elementor tool. Logo of the page was made independently in Adobe Photoshop. This website is responsive.
-                        <span id="moreDotsThreeEN">...</span>
-                        <span id="moreTextThreeEN">
-                            <br /><br /> Plagins used:
-                            <br /> - Countdown Timer for Elementor
-                            <br /> - Favicon by RealFaviconGenerator
-                            <br /> - Ocean Extra
-                        </span>
-                        <br />
-                        <br />
-                        <a onclick="MoreProjectThreeEN()" id="moreButtonThreeEN" class="more_text">MORE</a>
-                        <br />
-                        <div class="project_button">
-                            <a href="http://u95417.test-handyhost.ru/" target="_blank">OPEN WEBSITE</a>
-                        </div>
-                        <hr />
-                    </td>
-                </tr>
-                <tr class="project_box">
-                    <td>
-                        <a target="_blank" href="https://veronikadumalo.github.io/portfolio/"><img src="image/portfolio_screen.png" class="image_project" /></a>
-                    </td>
-                    <td>
-                        <p>Personal portfolio</p>
+        <h1 class="section-title">PROJECTS</h1>
+        <div class="project">
+            <div class="project-box">
+                <div class="project-banner">
+                    <a target="_blank" href="https://veronikadumalo.github.io/portfolio/index-pl.html"><img src="image/portfolio_screen.png" class="project-image" /></a>
+                </div>
+                <div class="project-text">
+                    <h1 class="project-title">Personal portfolio</h1>
+                    <p class="project-description">
                         The Landing Page contains information about me, skills and technologies that I use to create projects.
                         <span id="moreDotsTwoEN">...</span>
                         <span id="moreTextTwoEN">
-
-                            <br />
-                            <br /> The project includes a minimalist design. Balls are animated using CSS. Logo of the page was made independently in Adobe Photoshop. This website is responsive.
-                            <br /><br /> Libraries/frameworks used:
-                            <br /> - JQuery
-                            <br /> - ScrollReveal.js
+                            <span class="more-text-line">
+                                The project includes a minimalist design. Balls are animated using CSS. Logo of the page was made independently in Adobe Photoshop. This website is responsive.
+                            </span>  
+                            <span class="more-text-line">Libraries/frameworks used:</span> 
+                            <span class="more-text-line">- JQuery</span>
+                            <span class="more-text-line">- ScrollReveal.js</span>
                         </span>
-                        <br />
-                        <br />
-                        <a onclick="MoreProjectTwoEN()" id="moreButtonTwoEN" class="more_text">MORE</a>
-                        <br />
-                        <div class="project_button">
-                            <a href="https://veronikadumalo.github.io/portfolio/" target="_blank">OPEN</a>
-                            <a href="https://github.com/veronikadumalo/portfolio.git" target="_blank">CHECK CODE</a>
-                        </div>
-                        <hr />
-                    </td>
-                </tr>
-                <tr class="project_box">
-                    <td>
-                        <a target="_blank" href="http://spcmz.czest.pl/glowna.html"><img src="image/spcmz.png" class="image_project" /></a>
-                    </td>
-                    <td>
-                        <p>Website for Polski Centrum Miłośników Zwierząt</p>
-
-                        Website created to present the activities of Polski Centrum Miłośników Zwierząt.
-                        The project was created using HTML, CSS and JS.
-                        <div class="project_button">
-                            <a href="http://spcmz.czest.pl/glowna.html" target="_blank">OPEN</a>
-                            <a href="https://github.com/veronikadumalo/veronikadumalo_pcmz.git" target="_blank">CHECK CODE</a>
-                        </div>
-                        <hr />
-                    </td>
-                </tr>
-                <tr class="project_box">
-                    <td>
-                        <a target="_blank" href="https://github.com/veronikadumalo/veronikadumalo_phoneshop.git"><img src="image/sw.png" class="image_project" /></a>
-                    </td>
-                    <td>
-                        <p>Online shop with smartphones</p>
+                    </p>
+                    <a onclick="MoreProjectTwoEN()" id="moreButtonTwoEN" class="more-text">MORE</a>
+                    <div class="project-button">
+                        <a href="https://veronikadumalo.github.io/portfolio/" target="_blank" class="project-button-link">OPEN</a>
+                        <a href="https://github.com/veronikadumalo/portfolio.git" target="_blank" class="project-button-link">CHECK CODE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="project-box">
+            <div class="project-banner">
+                <a target="_blank" href="http://spcmz.czest.pl/glowna.html"><img src="image/spcmz.png" class="project-image" /></a>
+            </div>
+            <div class="project-text">
+                <h1 class="project-title">Website for Polski Centrum Miłośników Zwierząt</h1>
+                <p class="project-description">
+                    Website created to present the activities of Polski Centrum Miłośników Zwierząt.
+                    The project was created using HTML, CSS and JS.
+                </p>
+                <div class="project-button">
+                    <a href="http://spcmz.czest.pl/glowna.html" target="_blank" class="project-button-link">OPEN</a>
+                    <a href="https://github.com/veronikadumalo/veronikadumalo_pcmz.git" target="_blank" class="project-button-link">CHECK CODE</a>
+                </div>
+            </div>
+        </div>
+        <div class="project">
+            <div class="project-box">
+                <div class="project-banner">
+                    <a target="_blank" href="https://github.com/veronikadumalo/veronikadumalo_phoneshop.git"><img src="image/sw.png" class="project-image" /></a>
+                </div>
+                <div class="project-text">
+                    <h1 class="project-title">Online shop with smartphones</h1>
+                    <p class="project-description">
                         The project is a smartphone online store. For this project were used HTML, CSS, PHP and SQL database
                         <span id="moreDotsOneEN">...</span>
                         <span id="moreTextOneEN">
-                            :
-                            <br /> - The site includes the possibility of registration and logging in for users.
-                            <br /> - The data about the store's assortment are extracted from the database.
-                            <br /> - Users data are saved to the database.
+                            <span class="more-text-line">- The site includes the possibility of registration and logging in for users.</span>
+                            <span class="more-text-line">- The data about the store's assortment are extracted from the database.</span>
+                            <span class="more-text-line">- Users data are saved to the database.</span>
                         </span>
-                        <br />
-                        <br />
-                        <a onclick="MoreProjectOneEN()" id="moreButtonOneEN" class="more_text">MORE</a>
-                        <br />
-                        <div class="project_button">
-                            <a href="https://github.com/veronikadumalo/veronikadumalo_phoneshop.git" target="_blank">CHECK CODE</a>
-                        </div>
-                        <hr />
-                    </td>
-                </tr>
-            </table>
+                    </p>
+                    <a onclick="MoreProjectOneEN()" id="moreButtonOneEN" class="more-text">MORE</a>
+                    <div class="project-button">
+                        <a href="https://github.com/veronikadumalo/veronikadumalo_phoneshop.git" target="_blank" class="project-button-link">CHECK CODE</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <section id="contact" class="contact">
-        <h1>CONTACT</h1>
-        <hr />
+        <h1 class="section-title">CONTACT</h1>
         <div class="contact-list">
-            <table>
-                <tr>
-                    <td class="contact-logo"><a href="https://github.com/veronikadumalo" class="fab fa-github" target="_blank"></a></td class="contact-logo">
-                    <td><a href="https://github.com/veronikadumalo" class="text-link" target="_blank">github.com/veronikadumalo </a></td>
-                </tr>
-                <tr>
-                    <td class="contact-logo"><a href="mailto:dumaloveronika@gmail.com" class="fa fa-envelope" target="_blank"></a></td>
-                    <td><a href="" class="text-link" target="_blank">dumaloveronika@gmail.com </a></td>
-                </tr>
-                 <tr>
-                    <td class="contact-logo"><a href="https://www.linkedin.com/in/veronika-dumalo-6b952b1b2/" class="fab fa-linkedin" target="_blank"></a></td>
-                    <td><a href="https://www.linkedin.com/in/veronika-dumalo-6b952b1b2/" class="text-link" target="_blank">linkedin.com/in/veronika-dumalo-6b952b1b2/</a></td>
-                </tr>
-            </table>
+            <div class="contact-list-row">
+                <div class="contact-logo">
+                    <a href="https://www.linkedin.com/in/veronika-dumalo-6b952b1b2/" class="fab fa-linkedin contact-link" target="_blank"></a>
+                </div>
+                <a href="https://www.linkedin.com/in/veronika-dumalo-6b952b1b2/" class="contact-link" target="_blank">linkedin.com/in/veronika-dumalo-6b952b1b2/</a>
+            </div>
+            <div class="contact-list-row">
+                <div class="contact-logo">
+                    <a href="https://github.com/veronikadumalo" class="fab fa-github contact-link" target="_blank"></a>
+                </div>
+                <a href="https://github.com/veronikadumalo" class="contact-link " target="_blank">github.com/veronikadumalo </a>
+            </div>
+            <div class="contact-list-row">
+                <div class="contact-logo">
+                    <a href="" class="fa fa-envelope contact-link"></a>
+                </div>
+                <a href="" class="contact-link">dumaloveronika@gmail.com </a>
+            </div>
         </div>
-        <hr />
-        <div class="contactForm">
+        <div class="contact-form">
             <p class="form-name">CONTACT FORM</p>
             <form class="contact-form" method="post" action="mailto:dumaloveronika@gmail.com" enctype="text/plain" >
+                <span class="error-name" id="errorName">Enter name</span><br />
+                <label for="name" class="contact-form-label">Name:</label>
+                <input type="text" class="contact-form-input" id="name" name="Name"><br /><br />
 
-                <span class="errorName" id="errorName">Enter name</span><br />
-                <label for="name">Name:</label>
-                <input type="text" class="name" id="name" name="Name"><br /><br />
+                <span class="error-email" id="errorEmail" >Enter email</span><br />
+                <label for="email" class="contact-form-label">Email:</label>
+                <input type="email" class="contact-form-input" id="email" name="Email" /><br /><br />
 
-                <span class="errorEmail" id="errorEmail" >Enter email</span><br />
-                <label for="email">Email:</label>
-                <input type="email" class="email" id="email" name="Email" /><br /><br />
-
-                <span class="errorMessage" id="errorMessage">Enter message</span><br />
-                <label for="message">Message:</label>
-                <textarea id="message" class="message" name="Message"></textarea>
+                <span class="error-message" id="errorMessage">Enter message</span><br />
+                <label for="message" class="contact-form-label">Message:</label>
+                <textarea id="message" class="contact-form-textarea" name="Message"></textarea>
 
                 <div class="button-area">
-                    <button type="submit" class="send_button" id="send_button">SEND</button>
+                    <button type="submit" class="send-button" id="send_button">SEND</button>
                 </div>
             </form>
         </div>
-        <hr />
-        <p class="last_text">© Veronika Dumalo 2020</p>
+        <p class="last-text">© Veronika Dumalo 2020</p>
     </section>
     <script src="scroll.js"></script>
     <script src="send.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="portfolio.js"></script>
+    <script src="scrollreveal.js"></script>
  
 </body>
 </html>
