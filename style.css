@@ -187,73 +187,70 @@ body {
     background-color: #0d1a26;
     padding-bottom: 5%;
     color:  #ecf2f9;
+    font-size: 13pt;
     
 }
 .section-title{
-    padding-top: 5%;
+    padding: 5% 0 2% 0;
     text-align:center;
     font-size: 40px;
 }
 
-.about-section-name{
-    text-align:center;
+.section-subtitle {
+    text-align: center;
     font-size: 30px;
+    font-weight: 100;
 }
-.summary-box{
-    display: flex;
-    align-items:center;
-    width:70%;
+.section-box, .contact-list, .last-text {
+    width: 80%;
     margin: 0 auto;
+    padding: 40px 0;
+    border-top: 1px solid rgba(236, 242, 249, 0.3);
 }
-.about-section-name::before{
-    content: '';
-    display: block;
-    height: 1px;
-    width:80%;
-    background:#ecf2f9;
-    opacity: .5;
-    margin: 2% auto; 
+.section-box:last-of-type{
+    padding-bottom:0;
+}
+.summary{
+    align-items: center;
+}
+.summary, .education, .project-box, .contact-list-row {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 0 auto;
+    width: 90%;
 }
 .summary-image{
     width: 350px;
     height:auto;
 }
 .summaty-text{
-    font-size:14pt;
+    text-align:justify;
 }
-.education-box{
-    font-size: 14pt;
+.education{
+    padding-top: 40px ; 
 }
-.education-section{
-    display: flex;
-    align-items: flex-start;
-    margin:0 auto;
-    width:50%;
-    padding: 2% 0;
+.education-list {
+    list-style: none;
+    margin-left: 30px;
 }
-.education-column{
-    padding: 0 4%;
+.education-year{
+    text-align:right;
 }
-
-.technologie-list{
+.technology-list{
     width:100%;
-    margin-top:3%;
+    margin:3% 0;
     text-align:center;
-    margin-bottom:3%;
 }
 .technology {
     display: inline;
     padding:10px 30px;
     font-size:60px;
 }
-.fab {
+.fab, .fa-database {
     color: #ecf2f9;
 }
 .fab:hover{
     opacity:0.7;
-}
-.fa-database {
-    color: #ecf2f9;
 }
 .projects{
     width: 100%;
@@ -262,27 +259,18 @@ body {
     color: #0d1a26;
     padding-bottom: 3.5%;
 }
-
-.project-box{
-    display:flex;
+.project-box {
+    width: 70%;
+    padding: 40px 0;
+    border-top: 1px solid rgba(13, 26, 38, 0.3);
     align-items: center;
-    width:70%;
-    margin: 3.5% auto;
 }
-.project::after,
-.project::before{
-    content: '';
-    display: block;
-    height: 0.5px;
-    width:70%;
-    background:#0d1a26;
-    opacity: .2;
-    margin: 0 auto;
-    margin-top:3.5%; 
+.project-box:last-of-type{
+    border-bottom: 1px solid rgba(13, 26, 38, 0.3);
 }
-.project-image{
+.project-img{
     width: 30vw;
-    padding: 2%;    
+    padding: 2%;
 }
 .project-title{
     text-align:center;
@@ -324,56 +312,30 @@ body {
     background-color: #ecf2f9;
     color: #0d1a26;
     padding: 10px 10px;
-    font-size: 13px;
-    
-    border:groove;
-    border-width:2px;
-    border-color: #0d1a26;
+    border:2px groove #0d1a26;
     margin-left:5%;
     margin-top:3%;
+    font-size:12px;
 }
 .project-button-link:hover{
     background-color:#0d1a26;
     color:#ecf2f9;
     cursor: pointer;
 }
+#moreTextOne, #moreTextTwo, #moreTextOneEN, #moreTextTwoEN {
+    display: none;
+}
+.contact-list {
+    border-bottom: 1px solid rgba(236, 242, 249, 0.3);
+    padding: 30px;
+}
 
-#moreTextOne  {
-    display: none;
-}
-#moreTextTwo {
-    display: none;
-}
-#moreTextOneEN {
-    display: none;
-}
-#moreTextTwoEN {
-    display: none;
-}
-#moreTextThree {
-    display: none;
-}
-#moreTextThreeEN {
-    display: none;
-}
-.contact-list::after,
-.contact-list::before{
-    content: '';
-    display: block;
-    height: 1px;
-    width:80%;
-    background:#ecf2f9;
-    opacity: .5;
-    margin: 2% auto;  
-}
-.contact-list-row{
-     width: 25%;
-    margin: 0 auto;
-    display:flex;
-    align-items:center;
-    padding: 0.5% 0;
+.contact-list-row {
+    align-items: center;
+    padding: 10px 0;
 }
 .contact-logo{
+    text-align:right;
     font-size: 38px;
     padding-right: 5%;
 }
@@ -386,28 +348,23 @@ body {
     opacity: 0.7;
 }
 .contact-form {
+    padding:20px 0;
     max-width: 550px;
-    margin: auto;   
+    margin: 0 auto;
 }
 
-.contact-form-input{
+.contact-form-input,.contact-form-textarea{
     width:86%;
     height:40px;
     background-color:#0d1a26;
-    border-color:#ecf2f9;
-    border-width:1px;
+    border:1px solid #ecf2f9;
     color:#ecf2f9;
     float:right;
 }
 .contact-form-textarea{
-    width:86%;
     height:150px;
-    background-color:#0d1a26;
-    border-color:#ecf2f9;
-    border-width:1px;
-    color:#ecf2f9;
-    float:right;
  }
+
 .contact-form-label{
     color:#ecf2f9;
     margin:2% 0;
@@ -423,22 +380,18 @@ body {
     cursor: pointer;
 }
 .contact {
-    width: 100%;
     height: auto;
     background-color: #0d1a26;
     color: #ecf2f9;
 }
 .form-name {
     margin-top:2%;
-    color: #ecf2f9;
     text-align:center;
     font-size:25px;
 }
 .button-area{
-    
     max-width:50px;
     margin:auto;
-    
 }
 button:disabled,
 button[disabled]{
@@ -447,22 +400,10 @@ button[disabled]{
   color: #666666;
   cursor: default;
 }
-.contact-form{
-    margin-bottom: 3%;
-}
-.last-text::before{
-    content: '';
-    display: block;
-    height: 1px;
-    width:80%;
-    background:#ecf2f9;
-    opacity: .5;
-    margin: 0 auto; 
-    margin-bottom:2%;
-}
+
+
 .last-text {
     text-align: center;
-    color: #ecf2f9;
     margin-top: 2%;
     padding: 1% 0;
     font-size: 13px;
@@ -470,7 +411,6 @@ button[disabled]{
 label #sing-one,
 label #sing-two {
     font-size: 30px;
-    color: #0d1a26;
     float:right;
     line-height:50px;
     margin-right:30px;
@@ -493,23 +433,34 @@ label #sing-two {
         display: block;
         text-align:center;
     }
-    .summaty-text{
+    .summaty-text, .education-list{
         font-size: 13px;
     }
-    .about-section-name {
-        font-size: 22px;
+    .education-year{
+        text-align:left;
     }
-    .section-title{
+    .education-list{
+        margin: 0;
+    }
+    .technology{
+        width:100%;
+        font-size: 22px;
+        padding: 5px 5px;
+    }
+    .section-box, .contact-list, .last-text {
+        width: 90%;
+        margin: 0 auto;
+        padding: 20px 0;
+    }
+    .section-subtitle{
+        font-size:24px;
+    }
+    .section-title {
         padding-top: 15%;
         font-size: 30px;
     }
-    .about-section-name::before{
-        margin: 8% auto; 
-    }
-    .education-section{
-        display:block;
-        width:90%;
-        font-size:13px;
+    .education {
+        padding-top: 20px;
     }
     .home-name{
         font-size: 28px;
@@ -526,12 +477,7 @@ label #sing-two {
         padding:20px 6px;
         font-size:12px;
     }
-    .project-box{
-        display:block;
-        width:90%;
-        margin: 8% auto;
-    }
-    .project-image{
+    .project-img{
         width: 90vw;
     }
     .more-text{
@@ -540,10 +486,6 @@ label #sing-two {
     .project-button-link{
         font-size:10px;
         padding:5px 5px;
-    }
-    .project::after,
-    .project::before {
-        margin-top:8%; 
     }
     .projects {
         padding-bottom:8%;
@@ -554,6 +496,7 @@ label #sing-two {
     }
     .contact-logo{
         font-size:20px;
+        text-align:left;
     }
     .contact-list::after,
     .contact-list::before {
@@ -586,6 +529,15 @@ label #sing-two {
     }
     .last-text{
         font-size: 10px;
+    }
+    .summary, .education, .project-box {
+        display: block;
+        width: 90%;
+        margin:0 auto;
+        align-items:center;
+    }
+    .contact-form{
+        padding:0;
     }
 
  }
