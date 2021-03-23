@@ -237,9 +237,8 @@ body {
     text-align:right;
 }
 .technology-list{
-    width:100%;
-    margin:3% 0;
-    text-align:center;
+    width:80%;
+    margin:3% auto;
 }
 .technology {
     display: inline;
