@@ -282,8 +282,9 @@ body {
 .project-description{
     padding: 2.5% 0;
 }
-.more-text-line{
-    display:block;
+.used-technology-list{
+    list-style: inside;
+    list-style-type: circle;
 }
 .more-text{
     cursor: pointer;
