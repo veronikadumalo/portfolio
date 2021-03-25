@@ -236,13 +236,14 @@ body {
 .education-year{
     text-align:right;
 }
+
 .technology-list{
     width:80%;
     margin:3% auto;
 }
 .technology {
     display: inline;
-    padding:10px 30px;
+    padding:10px 25px;
     font-size:60px;
 }
 .fab, .fa-database {
