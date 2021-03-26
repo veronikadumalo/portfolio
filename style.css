@@ -220,7 +220,7 @@ body {
     width: 90%;
 }
 .summary-image{
-    width: 350px;
+    width: 20rem;
     height:auto;
     border-radius: 50%;
 }
@@ -448,6 +448,10 @@ label #sing-two {
         width:100%;
         font-size: 22px;
         padding: 5px 5px;
+    }
+    .technology-list{
+        width: 85%;
+        margin: 0 auto;
     }
     .section-box, .contact-list, .last-text {
         width: 90%;
