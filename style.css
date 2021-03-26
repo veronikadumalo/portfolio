@@ -222,6 +222,7 @@ body {
 .summary-image{
     width: 350px;
     height:auto;
+    border-radius: 50%;
 }
 .summaty-text{
     text-align:justify;
