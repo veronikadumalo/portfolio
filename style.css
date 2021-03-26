@@ -237,10 +237,9 @@ body {
 .education-year{
     text-align:right;
 }
-
 .technology-list{
-    width:80%;
-    margin:3% auto;
+    margin:3% 0;
+   text-align: center;
 }
 .technology {
     display: inline;
@@ -448,10 +447,6 @@ label #sing-two {
         width:100%;
         font-size: 22px;
         padding: 5px 5px;
-    }
-    .technology-list{
-        width: 85%;
-        margin: 0 auto;
     }
     .section-box, .contact-list, .last-text {
         width: 90%;
